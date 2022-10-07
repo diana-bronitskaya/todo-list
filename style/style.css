@@ -43,8 +43,8 @@ body {
     margin: auto;
     box-sizing: border-box;
     position: absolute;
-    border: 2px solid rgba(5, 59, 28, 0.5);
-    border-radius: 5%;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 8%;
     box-sizing: border-box;
 }
 h1 {
@@ -67,22 +67,27 @@ h1 {
 
 .task {
     display: flex;
-    align-items: center;
     padding: 0px 0px;
     margin-left: 44px;
+    margin-bottom: 4px;
+    height: 30px;
 }
 
 .task input {
     margin-right: 10px;
+    cursor: default;
+    margin-top: -6px;
+}
+
+#task-name-input:hover {
+    box-shadow: 0 0 12px white;
 }
 
 .task p {
     margin-left: 4px;
-    
 }
 
 .completed {
-    background-color: rgb(2, 39, 19, 0.5);
     color: white;
     padding-right: 20px;
     margin-right: 10px;
@@ -109,21 +114,39 @@ h1 {
 #task-name-input {
     margin: 10px;
     border: 1px solid black;
+    width: 70%;
     height: 25px;
+    border-radius: 15px;
+    text-indent: 10px;
+    font-size: large;
+    border-width: 2px;
+    outline: 1px solid black;
+    border: none;
+  
 
     
 }
 .input-panel button {
-    padding: 4px;
-    width: 15%;
+    padding: 8px;
+    padding-top: 2px;
+    width: 20%;
+    height: 26.99px;
     font-family: 'Dancing Script', cursive;
     background-color: transparent;
-    border: none;
     cursor: pointer;
-    text-decoration: underline;
-    
-    font-size: large;
+    text-align: center;
+    border-radius: 14px;
+    border: 1px solid black;
+    font-weight: bold;
+   
+}
 
+.input-panel button:hover {
+    box-shadow: 0 0 5px white;
+    border: 1px solid white;
+    color: white;
+    font-weight: lighter;
+    letter-spacing: 2px;
 }
 .button-panel {
     position: relative;
@@ -137,15 +160,26 @@ h1 {
 }
 .button-panel .clearAllButton, .allTasksButton, .uncompletedTasksButton {
     background-color: transparent;
-    border: none;
     cursor: pointer;
-    text-decoration: underline;
-    font-size: large;
-    margin-left: 10px;
-    
+    margin-left: 6px;
+    padding: 8px;
+    padding-top: 2px;
+    height: 26.99px;
+    font-family: 'Dancing Script', cursive;
+    border-radius: 14px;
+    border: 1px solid black;
+    font-weight: bold;
     
 }
 
-
+.button-panel .clearAllButton:hover, .allTasksButton:hover, .uncompletedTasksButton:hover {
+    box-shadow: 0 0 5px white;
+    border: 1px solid white;
+    color: white;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    
+   
+}
 
  
